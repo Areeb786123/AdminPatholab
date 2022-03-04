@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragments"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24">
+
+    </item>
+
+    <item
+        android:id="@+id/slotsFragments"
+        android:title="Slots"
+        android:icon="@drawable/ic_baseline_home_repair_service_24">
+
+    </item>
+
+
+    <item
+
+        android:id="@+id/profileFragments"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"></item>
+    <item
+        android:id="@+id/chatFragments"
+        android:title="chats"
+        android:icon="@drawable/ic_baseline_message_24"></item>
+
+    <item
+        android:id="@+id/tretsetsFragments"
+        android:title="treatsets"
+        android:icon="@drawable/ic_baseline_edit_note_24"
+        ></item>
+
+</menu>
