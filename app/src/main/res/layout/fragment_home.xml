@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1CFCF"
+    android:background="#FFFFFF"
     tools:context=".Fragments.home">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home"
-        android:textSize="60dp"/>
+        android:layout_height="wrap_content"
+        android:text="Your Tasks "
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"></TextView>
 
-</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/homerec"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

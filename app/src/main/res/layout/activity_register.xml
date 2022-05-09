@@ -13,6 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="35dp"></TextView>
@@ -20,20 +23,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/regname"
-        android:hint="full name "
+        android:hint="Your Lab name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"></EditText>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/regphone"
-        android:hint="phone"
+        android:hint="Lab phone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:inputType="number"
         android:layout_marginTop="20dp"></EditText>
  <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/regemail"
-    android:hint="email"
+    android:hint="Lab email"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
     android:layout_marginTop="20dp"></EditText>
 
 
@@ -43,23 +52,53 @@
         android:hint="password"
         android:inputType="textPassword"
         android:id="@+id/reg_pas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"></EditText>
 
-    <EditText
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Write your full detailed Address here "
-        android:id="@+id/AdminAddress"
-        ></EditText>
+        android:layout_height="200dp"
+        android:backgroundTintMode="multiply"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        android:foregroundTint="@color/teal_700"
 
-    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:textColorHint="@color/teal_700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Write your full detailed Address here "
+                    android:id="@+id/AdminAddress"
+                    ></EditText>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:id="@+id/reg_btn"
+        android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:text="register">
 
-    </androidx.appcompat.widget.AppCompatButton>
+    </Button>
 
     <ProgressBar
         android:layout_width="match_parent"

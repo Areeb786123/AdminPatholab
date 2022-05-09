@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.areeb.adminpatholab.Fragments.home;
 import com.areeb.adminpatholab.Fragments.profile;
 import com.areeb.adminpatholab.Fragments.slots;
+
 import com.areeb.adminpatholab.Fragments.treatset;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

@@ -13,6 +13,15 @@
         android:theme="@style/Theme.AdminPatholab"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activities.Service"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Details"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddTreatmentData"
+            android:exported="false" />
+        <activity
             android:name=".Activities.test"
             android:exported="false" />
         <activity

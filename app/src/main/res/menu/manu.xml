@@ -18,19 +18,17 @@
 
 
     <item
-
-        android:id="@+id/profileFragments"
-        android:title="Profile"
-        android:icon="@drawable/ic_baseline_person_24"></item>
-    <item
-        android:id="@+id/chatFragments"
-        android:title="chats"
-        android:icon="@drawable/ic_baseline_message_24"></item>
-
-    <item
         android:id="@+id/tretsetsFragments"
         android:title="treatsets"
         android:icon="@drawable/ic_baseline_edit_note_24"
         ></item>
+
+    <item
+
+        android:id="@+id/profileFragments"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"></item>
+
+
 
 </menu>

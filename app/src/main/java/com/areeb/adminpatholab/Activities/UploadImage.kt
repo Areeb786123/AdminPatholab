@@ -9,6 +9,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import com.areeb.adminpatholab.Fragments.home
 import com.areeb.adminpatholab.MainActivity
 import com.areeb.adminpatholab.Model.ProfileModel
 import com.areeb.adminpatholab.R
@@ -130,11 +131,11 @@ class UploadImage : AppCompatActivity() {
 
             pd.dismiss()
 
-            val home_intent = Intent(this, Login::class.java)
+            val home_intent = Intent(this, AddTreatmentData::class.java)
             startActivity(home_intent)
 
 
-            val new_in = Intent(applicationContext, Login::class.java)
+            val new_in = Intent(applicationContext, AddTreatmentData::class.java)
             startActivity(new_in)
 
 
