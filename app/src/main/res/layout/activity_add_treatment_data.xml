@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddTreatmentData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specify your Treatment Price"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Specify the treatment"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/treatmentName"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Specify the treatment Price"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/treatmentPrice"></EditText>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addData"
+        android:layout_marginLeft="100dp"
+        android:text="Add+"
+        android:textSize="18dp"></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleTreatment_main"
+        android:layout_height="250dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/saveData"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:text="Save your Data"
+        android:textSize="15dp"></androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>
